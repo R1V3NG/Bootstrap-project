@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub-coffee</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-cup-hot-fill"></i> Coffee Hub
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Меню</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">О нас</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="bi bi-person"></i> Войти
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleLight" class="carousel carousel-light slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item" data-bs-interval="10000">
+                <img src="assets/images/Coffee.jpg" class="d-block w-100 c-img" alt="Кофе">
+                <div class="carousel-caption">
+                    <h5>Авторский кофе</h5>
+                    <p>Только отборные сорта арабики.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="2000">
+                <img src="assets/images/Desserts.jpg" class="d-block w-100 c-img" alt="Десерты">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Свежая выпечка</h5>
+                    <p>Домашние десерты каждый день</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="assets/images/Interier.jpg" class="d-block w-100 c-img" alt="Интерьер">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Уютная атмосфера</h5>
+                    <p>Идеальное место для работы и отдыха</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLight" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-clock display-4 text-primary"></i>
+                        <h5 class="card-title mt-3">Работаем с 7:00 до 23:00</h5>
+                        <p class="card-text">Каждый день, включая выходные. Идеально для ранних пташек и ночных сов.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-wifi display-4 text-success"></i>
+                        <h5 class="card-title mt-3">Бесплатный Wi-Fi</h5>
+                        <p class="card-text">Высокоскоростной интернет для работы и учебы. Пароль: coffeelover2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-truck display-4 text-warning"></i>
+                        <h5 class="card-title mt-3">Бесплатная доставка</h5>
+                        <p class="card-text">При заказе от 500 рублей в радиусе 3 км. Быстро и горячо!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-4">
+            <h4 class="alert-heading"><i class="bi bi-info-circle"></i> Акция!</h4>
+            <p>Каждая 5-я чашка кофе - бесплатно! Спросите карту лояльности у бариста.</p>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Вход в аккаунт</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="remember">
+                            <label class="form-check-label" for="remember">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Войти</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark py-4 w-100 mt-auto">
+        <div class="container-fluid">
+            <ul class="nav justify-content-center border-bottom pb-4 mb-4 border-secondary">
+                <li class="nav-item"><a href="index.html" class="fs-4 nav-link px-4 text-light">Главная</a></li>
+                <li class="nav-item"><a href="menu.html" class="fs-4 nav-link px-4 text-light">Меню</a></li>
+                <li class="nav-item"><a href="contacts.html" class="fs-4 nav-link px-4 text-light">О нас</a></li>
+            </ul>
+            <p class="fs-3 text-center text-light fw-bold"><i class="me-2 bi bi-cup-hot-fill"></i>Coffee Hub</p>
+            <div class="fs-3 text-center text-light">
+                <small>г. Москва, ул. Кофейная, 15</small>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Обработка формы входа
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Добро пожаловать! В реальном приложении здесь была бы авторизация.');
+            bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+        });
+    </script>
+</body>
+
+</html>

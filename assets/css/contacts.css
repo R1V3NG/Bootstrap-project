@@ -1,0 +1,126 @@
+.accordion-item {
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.75rem !important;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.accordion-button {
+    border-radius: 0.75rem !important;
+    background-color: #fff;
+    color: #212529;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: #212529 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #212529;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-collapse {
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.accordion-body {
+    background-color: #fff;
+}
+
+.contact-item {
+    border-left: 3px solid #212529;
+    padding-left: 1rem;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.25);
+}
+
+.form-select:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.25);
+}
+
+.form-check-input {
+    border:1px solid #212529;
+}
+
+.btn-custom-dark {
+    background-color: #212529;
+    border-color: #212529;
+    color: white !important;
+}
+
+.btn-custom-dark:hover,
+.btn-custom-dark:focus {
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-custom-dark:active {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .contact-item {
+        border-left: none;
+        border-bottom: 2px solid #f8f9fa;
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+    
+    .contact-item:last-child {
+        border-bottom: none;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+.btn-outline-dark {
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    transform: translateY(-1px);
+}
+
+.card-title {
+    color: #212529;
+    border-bottom: 3px solid;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
